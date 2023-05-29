@@ -11,3 +11,15 @@ __pycache__/
 # due to using tox and pytest
 .tox
 .cache
+
+venv
+devenv
+localenv
+.dev
+.pip
+
+.env
+
+*.wav
+*.mp3
+**/video01.wav
