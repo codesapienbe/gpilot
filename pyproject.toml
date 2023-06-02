@@ -10,19 +10,19 @@
 # There are some restrictions on what makes a valid project name
 # specification here:
 # https://packaging.python.org/specifications/core-metadata/#name
-name = "aij"  # Required
+name = "gpilot"  # Required
 
 # Versions should comply with PEP 440:
 # https://www.python.org/dev/peps/pep-0440/
 #
 # For a discussion on single-sourcing the version, see
 # https://packaging.python.org/guides/single-sourcing-package-version/
-version = "1.2.9"
+version = "0.0.1"
 
 # This is a one-line description or tagline of what your project does. This
 # corresponds to the "Summary" metadata field:
 # https://packaging.python.org/specifications/core-metadata/#summary
-description = "AI Journalist"  # Optional
+description = "GPilot is a game-focused AI pilot."  # Optional
 
 # This is an optional longer description of your project that represents
 # the body of text which users will see when they visit PyPI.
@@ -51,7 +51,7 @@ license = { file = "LICENSE.txt" }
 # Note that this is a list of additional keywords, separated
 # by commas, to be used to assist searching for the distribution in a
 # larger catalog.
-keywords = ["aij", "setuptools", "development", "ai journalist", "machine learning", "artificial intelligence"]  # Optional
+keywords = ["gpilot", "setuptools", "development", "ai journalist", "machine learning", "artificial intelligence"]  # Optional
 
 # This should be your name or the name of the organization who originally
 # authored the project, and a valid email address corresponding to the name
@@ -97,63 +97,45 @@ classifiers = [# Optional
 # For an analysis of this field vs pip's requirements files see:
 # https://packaging.python.org/discussions/install-requires-vs-requirements/
 dependencies = [
+    "install",
     "requests",
     "setuptools",
-    "wheel",
-    "pipenv",
-    "pylint",
-    "autopep8",
-    "pyinstaller",
+    "build",
     "black",
-    "coveralls",
     "coverage",
     "flake8",
-    "mypy",
     "pep8-naming",
-    "pre-commit",
     "pytest",
     "pytest-cov",
     "pytest-mock",
     "pytest-profiling",
+    "wheel",
+    "twine",
+    "pylint",
+    "autopep8",
+    "pyinstaller",
     "opencv-python",
     "mediapipe",
+    "cvzone",
     "pandas",
-    "gtts",
-    "pygame",
-    "cairosvg",
-    "pika",
-    "newsapi-python",
-    "openai",
-    "openai-whisper",
-    "langchain",
-    "plyer",
     "python-dotenv",
     "kivy[dev]",
-    "docker",
-    "youtube_dl",
-    "python_ffmpeg",
-    "psutil",
-    "flask",
-    "flask-socketio",
-    "flask-cors",
-    "flask-sqlalchemy",
-    "deepface",
-    "speechbrain",
-    "soundfile",
-    "transformers",
-    "langchain",
-    "pytube3",
-    "nltk",
-    "spacy",
+    "keras",
     "jupyter",
     "jupyterlab",
     "jupyterlab-code-formatter",
     "jupyterlab-git",
     "jupyterlab-lsp",
     "pynput",
-    "pynput",
-    "comtypes",
-    "pycaw"
+    "gymnasium",
+    "tensorflow",
+    "pika",
+    "vizdoom",
+    "vizdoom[gym]",
+    "pygame",
+    "mss",
+    "Flask",
+    "gym-csgo"
 ]
 
 # List additional groups of dependencies here (e.g. development
@@ -179,42 +161,20 @@ test = ["coverage"]
 # maintainers, and where to support the project financially. The key is
 # what's used to render the link text on PyPI.
 [project.urls]  # Optional
-"Homepage" = "https://www.codesapien.be/aij/"
-"Bug Reports" = "https://github.com/codesapienbe/aij/issues"
+"Homepage" = "https://www.codesapien.be/gpilot/"
+"Bug Reports" = "https://github.com/codesapienbe/gpilot/issues"
 "Funding" = "https://donate.pypi.org"
-"Say Thanks!" = "http://saythanks.io/to/aij"
-"Source" = "https://github.com/codesapienbe/aij"
+"Say Thanks!" = "http://saythanks.io/to/gpilot"
+"Source" = "https://github.com/codesapienbe/gpilot"
 
 # The following would provide a command line executable called `sample`
 # which executes the function `main` from this package when invoked.
 [project.scripts]  # Optional
-aij = "webcam:main"
-aij-animation = "animation:main"
-aij-chat = "chat:main"
-aij-download = "download:main"
-aij-emotion = "emotion:main"
-aij-entity = "entity:main"
-aij-face = "face:main"
-aij-fake = "fake:main"
-aij-intro = "intro:main"
-aij-keyboard = "keyboard:main"
-aij-knowledge = "knowledge:main"
-aij-language = "language:main"
-aij-messaging = "messaging:main"
-aij-news = "news:main"
-aij-objectron = "objectron:main"
-aij-scrape = "scrape:main"
-aij-selfie = "selfie:main"
-aij-sentiment = "sentiment:main"
-aij-setup = "setup:main"
-aij-stream = "stream:main"
-aij-transcibe = "transcribe:main"
-aij-translate = "translate:main"
-aij-voice = "voice:main"
-aij-volume = "volume:main"
-aij-webcam = "webcam:main"
-aij-webcam2 = "webcam2:main"
-aij-webcam3 = "webcam3:main"
+gpilot-keyboard = "toets:main"
+gpilot-mouse = "muis:main"
+gpilot-doom = "doom:main"
+gpilot-inspect = "inspect:main"
+gpilot-csgo = "csgo:main"
 
 # This is configuration specific to the `setuptools` build backend.
 # If you are using a different build backend, you will need to change this.

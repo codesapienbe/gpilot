@@ -29,7 +29,11 @@ pip install \
     jupyterlab-code-formatter \
     jupyterlab-git \
     jupyterlab-lsp \
-    pynput
-
-
+    pynput \
+    gymnasium \
+    tensorflow \
+    pika \
+    vizdoom \
+    vizdoom[gym] \
+    gym-csgo
 
