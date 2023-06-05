@@ -1,4 +1,3 @@
-import gym_csgo
 import gymnasium as gym
 
 
@@ -11,6 +10,11 @@ def main():
     environment is considered "done". Within the loop, a random action is sampled from the environment's action space.
     That action is executed and the resulting observation, reward, done signal, and debug information are collected.
     """
+
+    # gym_csgo registers the envs (to gym.make(...))
+    # Gym environments
+
+    # Open new environment context (automatically closes env at end of scope)
     with gym.make('csgo_dm-v0') as env:
         # Reset the environment
         env.reset()
@@ -24,7 +28,7 @@ def main():
             obs, rew, done, info = env.step(action)
 
             print(
-                f"Action: {action}, Observation: {obs}, Reward: {rew}, Done: {done}, Info: {info}"
+                f'Action: {action}, Observation: {obs}, Reward: {rew}, Done: {done}, Info: {info}'
             )
 
 
